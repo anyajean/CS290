@@ -14,3 +14,19 @@ font-size: 20px;
 font-weight: 200;
 line-height: 27px;
 }
+#outer-content {
+	width: 75%;
+	background-color: pink;
+	align-content: left;
+}
+#inner-content {
+	width: 75%;
+        background-color: blue;
+	align-content: center;
+}
+#a_row {
+        background-color: red;
+}
+#a_row {
+        background-color: green;
+}

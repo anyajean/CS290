@@ -2,10 +2,152 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
     <title>title</title>
   </head>
   <body>
     <!-- page content -->
+	<table>
+		<caption>My Weekly Calendar</caption>
+		<thead>
+			<tr>
+			<td></td>
+			<td>Monday</td>
+			<td>Tuesday</td>
+			<td>Wednesday</td>
+			<td>Thursday</td>
+			<td>Friday</td>
+			</tr>
+		</thead>
+		<tbody> <!-- First row -->
+			<tr id="a_row">
+                        <td><i>Early Morning</i></td>
+                        <td>Relax Time</td>
+                        <td>Classes</td>
+                        <td>Relax Time</td>
+                        <td>Classes</td>
+                        <td>Relax Time</td>
+                        </tr>
+
+			<tr id="b_row">
+                        <td><i>Late Morning</i></td>
+                        <td>Classes</td>
+                        <td>Classes</td>
+                        <td>Classes</td>
+                        <td>Classes</td>
+                        <td>Classes</td>
+                        </tr>
+
+			<tr id="a_row">
+                        <td><i>Afternooon</i></td>
+                        <td>Homework</td>
+                        <td>Work</td>
+                        <td>Homework</td>
+                        <td>Work</td>
+                        <td>Friend Time</td>
+                        </tr>
+
+			<tr id="b_row">
+                        <td><i>Late Afternoon</i></td>
+                        <td>Homework</td>
+                        <td>Date Night</td>
+                        <td>Homework</td>
+                        <td>Homework</td>
+                        <td>Free Time</td>
+                        </tr>
+
+			<tr id="a_row">
+                        <td><i>Late Afternoon</i></td>
+                        <td>Homework</td>
+                        <td>Date Night</td>
+                        <td>Homework</td>
+                        <td>Homework</td>
+                        <td>Free Time</td>
+                        </tr>
+
+			<tr>
+                        <td colspan="2"><i>Weekends</i></td>
+                        <td colspan="4">TBD</td>
+                        </tr>
+		</tbody>
+	</table>
+	
+	<ul>
+  		<li>Tacos</li>
+  		<li>Sushi</li>
+  		<li>Pesto</li>
+	</ul>
+
+	<div id="outer-content">
+		<div id="inner-content">Content
+		</div>
+	</div>
+
+	<form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php" method="get">
+    	<fieldset>
+        	<legend>Your Information:</legend>
+        	<label>Name:
+            		<input type="text" name="text_input" size="30" maxlength="100">
+        	</label>
+        	<br />
+        	<label>Number:
+            		<input type="number" name="numerical_input" size="30" maxlength="100">
+        	</label>
+        	<br />
+		<label>Paswword:
+                        <input type="password" name="password_input" size="30" maxlength="100">
+                </label>
+                <br />
+    	</fieldset>
+    	<br />
+    	<fieldset>
+        <legend>Your Favortie Candy:</legend>
+            		<br />
+            		<label>
+                		<input type="radio" name="candy" value="snickers" />Snickers</label>
+            		<label>	
+                		<input type="radio" name="candy" value="skittles" />Skittles</label>
+            		<label>
+                		<input type="radio" name="candy" value="mentos" />Mentos</label>
+        	</p>
+    		</fieldset>
+		<fieldset>
+			<input type="submit" value="Submit">
+		</fieldset>
+	</form>
+
+        <form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php" method="post">
+        <fieldset>
+                <legend>Your Information:</legend>
+                <label>Name:
+                        <input type="text" name="text_input" size="30" maxlength="100">
+                </label>
+                <br />
+                <label>Number:
+                        <input type="number" name="numerical_input" size="30" maxlength="100">
+                </label>
+                <br />
+                <label>Paswword:
+                        <input type="password" name="password_input" size="30" maxlength="100">
+                </label>
+                <br />
+        </fieldset>
+        <br />
+        <fieldset>
+        <legend>Your Favortie Candy:</legend>
+                        <br />
+                        <label>
+                                <input type="radio" name="candy" value="snickers" />Snickers</label>
+                        <label>
+                                <input type="radio" name="candy" value="skittles" />Skittles</label>
+                        <label>
+                                <input type="radio" name="candy" value="mentos" />Mentos</label>
+                </p>
+                </fieldset>
+		<fieldset>
+                        <input type="submit" value="Submit">
+                </fieldset>
+        </form>
   </body>
 </html>
 
