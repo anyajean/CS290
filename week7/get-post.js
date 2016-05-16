@@ -3,6 +3,11 @@ var express = require('express');
 var app = express();
 var handlebars = require('express-handlebars').create({defaultLayout:'main'});
 
+var bodyParser = require('body-parser');
+
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
+
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 app.set('port', 3000);
@@ -23,6 +28,16 @@ app.get('/showdata',function(req,res){
 
 app.get('/other-page',function(req,res){
   res.render('other-page');
+});
+
+app.post('/postdata', function(req,res){
+  var postData = [];
+  for(var p in req.body){
+    postData.push({'name':p,'value':req.body[p]})
+  } 
+  var context = {};
+  context.dataList = postData;
+  res.render('postdata', context);
 });
 
 app.use(function(req,res){
