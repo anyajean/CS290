@@ -11,6 +11,16 @@ app.get('/',function(req,res){
   res.render('home.handlebars') //We can omit the .handlebars extension as we do below
 });
 
+app.get('/showdata',function(req,res){
+  var getRequests = [];
+  for (var p in req.query){
+    getRequests.push({'name':p,'value':req.query[p]})
+  }
+  var context = {};
+  context.datalist = getRequests;
+  res.render('showdata',context);
+});
+
 app.get('/other-page',function(req,res){
   res.render('other-page');
 });
