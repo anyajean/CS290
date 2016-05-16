@@ -17,7 +17,7 @@ app.get('/showdata',function(req,res){
     getRequests.push({'name':p,'value':req.query[p]})
   }
   var context = {};
-  context.datalist = getRequests;
+  context.dataList = getRequests;
   res.render('showdata',context);
 });
 
